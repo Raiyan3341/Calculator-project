@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #1c1f1e; /* Black background */
+    background-color: #1c1f1e; /* Your background color */
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -14,17 +14,18 @@ body {
     text-align: center;
 }
 .calculator {
-    background-color: #000; /* Calculator background */
-    border: 2px solid #05f7bb; /* Green border */
+    background-color: #000; /* Your calculator background */
+    border: 2px solid #05f7bb; /* Your green border */
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 255, 200, 0.5); /* Green glow effect */
-    width: 300px; /* Adjust width as needed */
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.5); /* Your green glow effect */
+    width: 300px; /* Fixed width for static layout */
+    /* Removed max-width and box-sizing from here for static */
 }
 
 .display {
-    background-color: #ffffff; /* Darker green display */
-    color: #046ffa; /* Bright green text for display */
+    background-color: #ffffff; /* Your darker green display */
+    color: #046ffa; /* Your bright green text for display */
     font-size: 3em;
     text-align: right;
     padding: 15px;
@@ -35,6 +36,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     overflow: hidden; /* Prevent text overflow */
+    /* word-break: break-all; - Removed for static (though often useful regardless) */
 }
 
 .buttons {
@@ -44,41 +46,41 @@ body {
 }
 
 .btn {
-    background-color: #202020; /* Darker green for buttons */
-    color: #32cdc0; /* Bright green text for buttons */
+    background-color: #202020; /* Your darker green for buttons */
+    color: #32cdc0; /* Your bright green text for buttons */
     border: none;
-    padding: 20px 0;
+    padding: 20px 0; /* Vertical padding */
     font-size: 1.5em;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.2s, box-shadow 0.2s;
     outline: none; /* Remove outline on focus */
+    /* Removed width: 100% and aspect-ratio for static */
+    /* Removed flex properties for centering text if not needed for static */
 }
 
 .btn:active {
-    background-color: #10fdfd; /* Slightly lighter green on active */
-    box-shadow: 0 0 10px rgb(3, 255, 255); /* Stronger glow on active */
+    background-color: #10fdfd; /* Your slightly lighter green on active */
+    box-shadow: 0 0 10px rgb(3, 255, 255); /* Your stronger glow on active */
 }
 
 .btn.operator {
-    background-color: #6136fc;
+    background-color: #6136fc; /* Your operator background */
 }
 
 .btn.equals {
-    background-color: #00ff4c; /* Orange for the equals button */
-    color: #fff; /* White text for equals button */
+    background-color: #00ff4c; /* Your equals button color */
+    color: #fff; /* Your equals button text color */
+    grid-column: span 2; /* Still spans 2 columns for layout with 0 and . */
 }
 
 .btn.equals:active {
-    background-color: #ff8c00; /* Darker orange on active */
-    box-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
+    background-color: #ff8c00; /* Your darker orange on active */
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.7); /* Your stronger glow on active */
 }
 
 .btn.ac, .btn.de {
-    background-color: #ac0000;
+    background-color: #ac0000; /* Your AC/DE button color */
 }
 
-.double-width {
-    grid-column: span 2;
-}
-
+/* All media queries have been removed for a static layout. */
