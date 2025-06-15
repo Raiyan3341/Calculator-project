@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1c1f1e; /* Black background */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.shk{
+    background-image: linear-gradient(rgb(109, 97, 221), rgb(0, 255, 242));
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+}
+.calculator {
+    background-color: #000; /* Calculator background */
+    border: 2px solid #05f7bb; /* Green border */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.5); /* Green glow effect */
+    width: 300px; /* Adjust width as needed */
+}
+
+.display {
+    background-color: #ffffff; /* Darker green display */
+    color: #046ffa; /* Bright green text for display */
+    font-size: 3em;
+    text-align: right;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden; /* Prevent text overflow */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.btn {
+    background-color: #202020; /* Darker green for buttons */
+    color: #32cdc0; /* Bright green text for buttons */
+    border: none;
+    padding: 20px 0;
+    font-size: 1.5em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    outline: none; /* Remove outline on focus */
+}
+
+.btn:active {
+    background-color: #10fdfd; /* Slightly lighter green on active */
+    box-shadow: 0 0 10px rgb(3, 255, 255); /* Stronger glow on active */
+}
+
+.btn.operator {
+    background-color: #6136fc;
+}
+
+.btn.equals {
+    background-color: #00ff4c; /* Orange for the equals button */
+    color: #fff; /* White text for equals button */
+}
+
+.btn.equals:active {
+    background-color: #ff8c00; /* Darker orange on active */
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
+}
+
+.btn.ac, .btn.de {
+    background-color: #ac0000;
+}
+
+.double-width {
+    grid-column: span 2;
+}
+
